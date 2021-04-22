@@ -239,6 +239,9 @@ body {
     .collapse {
         margin-bottom: 150%;
     }
+    .videos{
+        background-color: #191919;
+    }
     .video_item {
         transform: scale(0.8, 0.8);
     }
