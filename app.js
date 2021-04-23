@@ -1,3 +1,4 @@
+ var key = 'movie_1'
  const movies = {
      movie_1: {
          Name: "The Shawshank Redemption",
@@ -56,8 +57,9 @@
          }
      },
      methods: {
-         async getMovie(id) {
-
+         getMovie(id) {
+             console.log(id)
+             key = id
 
              const { Name, Genre, Source, Thumbnail, Gif } = movies[id]
              this.Name = Name
@@ -75,3 +77,6 @@
  })
 
  app.mount("#app")
+
+
+ window.onload = app[methods].getMovie('movie_2')

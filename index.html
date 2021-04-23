@@ -75,22 +75,8 @@
                         <img src="LOGO.png">
                     </div>
                     <div class="container videos" id="video_card">
-                        <a type='button' v-on:click="getMovie( movie_1)">
-                            <div class="video-item card">
-                                <div class="row no-gutters">
-                                    <div class="col-md-6">
-                                        <img src="Images\Movies\silence_of_the_lambs.png" class="card-img">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="card-body">
-                                            <div class="card-title">The Silence Of The Lambs</div>
-                                            <p class="card-text">Suhan Bangera<br><strong>Horror/Thriller</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.html">
+
+                        <a v-on:click="getMovie('movie_1')">
                             <div class="video-item card">
                                 <div class="row no-gutters">
                                     <div class="col-md-6">
@@ -105,22 +91,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="Love_Actually.html">
-                            <div class="video-item card">
-                                <div class="row no-gutters">
-                                    <div class="col-md-6">
-                                        <img src="Images\Movies\Love_Actually.png" class="card-img">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="card-body">
-                                            <div class="card-title">Love Actually</div>
-                                            <p class="card-text">Suhan Bangera<br><strong>Feel Good/Romcom</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="Kadavule.html">
+
+                        <a v-on:click="getMovie('movie_3')">
                             <div class="video-item card">
                                 <div class="row no-gutters">
                                     <div class="col-md-6">
@@ -135,7 +107,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="Secret_Window.html">
+                        <a v-on:click="getMovie('movie_4')">
                             <div class="video-item card">
                                 <div class="row no-gutters">
                                     <div class="col-md-6">
@@ -150,7 +122,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="Dolores_Claiborne.html">
+                        <a v-on:click="getMovie('movie_6')">
+
                             <div class="video-item card">
                                 <div class="row no-gutters">
                                     <div class="col-md-6">
@@ -165,7 +138,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="Geralds_Game.html">
+                        <a v-on:click="getMovie('movie_5')">
                             <div class="video-item card">
                                 <div class="row no-gutters">
                                     <div class="col-md-6">
@@ -180,7 +153,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="WHMS.html">
+                        <a v-on:click="getMovie('movie_2')">
                             <div class="video-item card">
                                 <div class="row no-gutters">
                                     <div class="col-md-6">
@@ -211,7 +184,7 @@
             <div class="modal-dialog  modal-dialog-centered">
                 <div class="modal-content">
 
-                    <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe v-bind:src="Source" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                    <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe v-bind:src="Gif" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 
                 </div>
